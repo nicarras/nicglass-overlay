@@ -1,0 +1,143 @@
+SC Companion Overlay — THIRD-PARTY NOTICES
+===========================================
+
+This file lists the third-party components distributed with SC Companion Overlay
+and the notices their licenses require. SC Companion Overlay itself is licensed to
+end users under a proprietary EULA (see the LICENSE file); the components below keep
+their own licenses, and where a component's license grants you rights the EULA would
+otherwise restrict (for example, the right to modify or replace a bundled library),
+that license governs that component.
+
+Full license texts referenced below are shipped alongside this file in the licenses/
+directory. Font license texts ship under widgets/fonts/. All licenses last verified
+against the shipped dependency tree on 2026-09-19 (see the "Verification" section).
+
+
+-------------------------------------------------------------------------------
+1. uiohook-napi
+-------------------------------------------------------------------------------
+   Purpose : global low-level keyboard/mouse hook (overlay hotkeys).
+   Version : 1.5.5
+   License : MIT
+   Copyright (c) 2020 Alexander Drozdov
+   Source  : https://github.com/SnosMe/uiohook-napi
+
+   The MIT license covers only the N-API binding/glue code in this package. The
+   native library it wraps (libuiohook) is a separate component with its own
+   license — see section 2.
+
+   MIT License
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+
+-------------------------------------------------------------------------------
+2. libuiohook  (bundled inside the uiohook-napi native binary)
+-------------------------------------------------------------------------------
+   Purpose : cross-platform keyboard/mouse hooking, wrapped by uiohook-napi.
+   License : GNU Lesser General Public License v3.0 or later (LGPL-3.0-or-later)
+   Copyright (c) 2006-2023 Alexander Barker. All Rights Reserved.
+   Source  : https://github.com/kwhat/libuiohook
+
+   NOTICE (LGPL-3.0 §4(a)): this product uses the libuiohook library, and
+   libuiohook and its use are covered by the GNU Lesser General Public License,
+   version 3.
+
+   libuiohook is used UNMODIFIED, compiled into the separately-loadable native
+   module uiohook-napi.node, which SC Companion Overlay loads at run time through
+   the operating system's dynamic loader (a "suitable shared library mechanism"
+   under LGPL-3.0 §4(d)(1)). The module is shipped as a standalone .node file
+   outside the application archive; a technically capable user may replace it with
+   their own interface-compatible build of uiohook-napi / libuiohook, and the
+   application will continue to operate with it. Nothing in the SC Companion
+   Overlay EULA restricts that right for this component.
+
+   Because libuiohook is used unmodified, the unmodified upstream source at the
+   URL above is the corresponding source for this component; no local
+   modifications have been made to it.
+
+   Per LGPL-3.0 §4(b), a copy of the GNU Lesser General Public License and of the
+   GNU General Public License it incorporates are distributed with this software:
+     - licenses/LGPL-3.0.txt   (GNU LGPL v3 — additional permissions)
+     - licenses/GPL-3.0.txt    (GNU GPL v3 — incorporated base license)
+   The canonical texts are also available at:
+     - https://www.gnu.org/licenses/lgpl-3.0.txt
+     - https://www.gnu.org/licenses/gpl-3.0.txt
+
+
+-------------------------------------------------------------------------------
+3. AWS SDK for JavaScript v3 and Smithy runtime packages
+-------------------------------------------------------------------------------
+   Purpose : optional cloud price-observation sync (DynamoDB access + SigV4).
+   License : Apache License 2.0
+   Copyright (c) Amazon.com, Inc. or its affiliates. All Rights Reserved.
+   Sources : https://github.com/aws/aws-sdk-js-v3
+             https://github.com/smithy-lang/smithy-typescript
+
+   Packages covered by this notice (all Apache-2.0):
+     - @aws-crypto/sha256-js
+     - @aws-sdk/client-dynamodb
+     - @aws-sdk/lib-dynamodb
+     - @smithy/protocol-http
+     - @smithy/signature-v4
+
+   The full Apache License 2.0 text is distributed as licenses/Apache-2.0.txt (also
+   at https://www.apache.org/licenses/LICENSE-2.0.txt).
+   NOTICE (Apache-2.0 §4): the AWS SDK for JavaScript includes the following
+   attribution, reproduced here:
+
+     AWS SDK for JavaScript
+     Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+     This product includes software developed at
+     Amazon Web Services, Inc. (http://aws.amazon.com/).
+
+
+-------------------------------------------------------------------------------
+4. Bundled fonts
+-------------------------------------------------------------------------------
+   Purpose : widget UI typefaces.
+   License : SIL Open Font License 1.1 (OFL-1.1) — each font keeps its own license.
+
+     - Chakra Petch (weights 400/500/600/700), v1.000
+       Source : https://github.com/cadsondemak/Chakra-Petch
+       Text   : widgets/fonts/OFL-ChakraPetch.txt
+     - JetBrains Mono (weights 400/500/700), v2.304
+       Source : https://github.com/JetBrains/JetBrainsMono
+       Text   : widgets/fonts/OFL-JetBrainsMono.txt
+
+   See widgets/fonts/NOTICE.md. The canonical OFL-1.1 text lives at
+   https://openfontlicense.org.
+
+
+-------------------------------------------------------------------------------
+Verification
+-------------------------------------------------------------------------------
+Verified 2026-09-19 against the installed dependency tree:
+  - node_modules/uiohook-napi@1.5.5/LICENSE declares MIT (© 2020 Alexander Drozdov).
+  - node_modules/uiohook-napi/libuiohook/include/uiohook.h and the Windows hook
+    implementation (src/windows/input_hook.c) carry LGPL-3.0-or-later headers
+    (© 2006-2023 Alexander Barker); the vendored library is used unmodified.
+  - The AWS SDK / Smithy packages above declare Apache-2.0.
+Full background: docs/sessions/2026-09-19-libuiohook-license-verify.md.
+
+RE-VERIFY AT PACKAGING TIME: the libuiohook submodule vendored by uiohook-napi is
+unpinned, so confirm the shipped node_modules/uiohook-napi tree's headers still read
+LGPL-3.0-or-later before each release, and never statically link or ASAR-inline the
+.node (keep asarUnpack + npmRebuild:false so it stays a separately-loadable library).

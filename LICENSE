@@ -1,0 +1,116 @@
+SC Companion Overlay — End User License Agreement (EULA)
+
+Version 1.0 — 2026-09-19
+Copyright (c) 2026 the SC Companion Overlay author ("Licensor"). All rights reserved.
+
+IMPORTANT — READ CAREFULLY. This End User License Agreement ("Agreement") is a
+legal agreement between you ("You") and the Licensor for the SC Companion Overlay
+software, including its executables, bundled data files, and documentation (the
+"Software"). By installing, copying, or otherwise using the Software, You agree to
+be bound by this Agreement. If You do not agree, do not install or use the Software.
+
+
+1. LICENSE GRANT
+
+Subject to Your compliance with this Agreement, the Licensor grants You a personal,
+non-exclusive, non-transferable, revocable license, free of charge, to install and
+use the Software on computers You own or control, for Your own personal use.
+
+The Software is licensed, not sold. The Licensor retains all right, title, and
+interest in and to the Software, including all intellectual property rights.
+
+
+2. RESTRICTIONS
+
+Except as expressly permitted by this Agreement, by the licenses governing the
+third-party components described in Section 3, or by applicable law that cannot be
+excluded by agreement, You may not:
+
+  (a) redistribute, publish, sell, rent, lease, sublicense, or otherwise make the
+      Software available to any third party, whether for a fee or free of charge;
+
+  (b) reverse engineer, decompile, disassemble, or otherwise attempt to derive the
+      source code, structure, or organization of the Software, or defeat or
+      circumvent any technical measures in it;
+
+  (c) modify, adapt, translate, or create derivative works based on the Software; or
+
+  (d) remove, alter, or obscure any proprietary notices, license text, or
+      attribution included in or with the Software.
+
+Nothing in this Section limits any right You have under the open-source licenses of
+the third-party components in Section 3, or any right that applicable law grants You
+and that may not be excluded by contract. In particular, the reverse-engineering and
+modification restrictions above do NOT apply to the separately-licensed, dynamically-
+loaded native components identified in the THIRD-PARTY-NOTICES file, to the extent
+their licenses grant You the right to reverse engineer, modify, or replace them (for
+example, to substitute Your own compatible build of a bundled library).
+
+
+3. THIRD-PARTY AND OPEN-SOURCE COMPONENTS
+
+The Software includes third-party components, including open-source components, which
+are licensed under their own terms. Those components, their licenses, and the required
+notices are set out in the THIRD-PARTY-NOTICES file distributed with the Software. To
+the extent a third-party license conflicts with this Agreement with respect to that
+component, the third-party license governs that component. You must comply with the
+terms of those third-party licenses.
+
+
+4. NO ASSOCIATION WITH CLOUD IMPERIUM GAMES
+
+The Software is an unofficial, fan-made tool. It is not created, endorsed, sponsored,
+or affiliated with Cloud Imperium Games ("CIG"), Roberts Space Industries, or any of
+their affiliates. "Star Citizen" and all related marks are the property of their
+respective owners. You are solely responsible for ensuring that Your use of the
+Software complies with CIG's then-current Terms of Service, End User License Agreement,
+and any anti-cheat or fair-use policies. Your right to use the Software under this
+Agreement does not grant You any right in respect of Star Citizen or CIG's services.
+
+
+5. DISCLAIMER OF WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. THE
+LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR
+THAT IT IS COMPATIBLE WITH, OR PERMITTED BY, ANY THIRD-PARTY SERVICE, INCLUDING STAR
+CITIZEN. YOU USE THE SOFTWARE AT YOUR OWN RISK.
+
+
+6. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL THE LICENSOR BE
+LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR
+FOR ANY LOSS OF PROFITS, DATA, GOODWILL, GAME ACCOUNTS, OR OTHER INTANGIBLE LOSSES,
+ARISING OUT OF OR RELATING TO YOUR USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE LICENSOR'S TOTAL AGGREGATE LIABILITY
+UNDER THIS AGREEMENT WILL NOT EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE, WHICH FOR A
+FREE LICENSE IS ZERO.
+
+
+7. TERMINATION
+
+This Agreement is effective until terminated. It terminates automatically, without
+notice, if You breach any of its terms. Upon termination, You must stop using the
+Software and destroy all copies in Your possession or control. Sections 2 through 6
+and 8 through 9 survive termination.
+
+
+8. RESERVATION OF RIGHTS
+
+All rights not expressly granted to You in this Agreement are reserved by the Licensor.
+The Software's source code and development materials are proprietary and are not
+published; the availability of the Software as a downloadable build does not grant any
+license to its source, and the fact that the Software is distributed as interpretable
+code does not waive any restriction in this Agreement.
+
+
+9. GENERAL
+
+If any provision of this Agreement is held unenforceable, the remaining provisions
+remain in full force. The Licensor's failure to enforce any provision is not a waiver
+of it. This Agreement is the entire agreement between You and the Licensor regarding
+the Software and supersedes any prior understanding. This Agreement is governed by the
+laws of the jurisdiction in which the Licensor resides, without regard to its conflict-
+of-laws rules.
