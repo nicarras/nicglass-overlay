@@ -1,0 +1,25 @@
+name: Feature request
+description: An idea for something the overlay could show or do.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The overlay only reads what the game writes to its own log (plus optional,
+        screenshot-style OCR). It never reads game memory, hooks the game, or automates
+        input — so ideas that would need any of those can't be built.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What problem would it solve in game?
+      description: The situation where you wished you had this.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else? (optional)

@@ -1,0 +1,66 @@
+name: Bug report
+description: Something in the overlay is wrong, missing, or broken.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Issues are **public** — please
+        **don't attach a raw `Game.log`**, it carries your handle and session detail.
+        Paste only the few lines around the problem (blank out your handle if you like).
+  - type: input
+    id: version
+    attributes:
+      label: Overlay version
+      description: Shown in the overlay under Settings → Updates → Version.
+      placeholder: e.g. 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: game-version
+    attributes:
+      label: Star Citizen version / patch
+      placeholder: e.g. 4.3 LIVE
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the overlay?
+      options:
+        - Missions / deliveries
+        - Trading / advisor
+        - Salvage
+        - Session log / journal
+        - OCR
+        - Cloud sync / account link
+        - Settings / hotkeys / appearance
+        - Install / update / startup
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you saw, and what you expected to see instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What you were doing in game when it happened, if you know.
+      placeholder: |
+        1. Accepted a hauling contract at ...
+        2. Opened the Deliveries panel
+        3. ...
+  - type: textarea
+    id: log-lines
+    attributes:
+      label: Relevant log lines (optional)
+      description: A few lines from Game.log around the problem — NOT the whole file.
+      render: text
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else? (optional)
+      description: Screenshots, your resolution/HUD scale for OCR issues, etc.

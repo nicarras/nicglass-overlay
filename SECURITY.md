@@ -7,13 +7,14 @@ there are no long-term support branches.
 
 ## Reporting a vulnerability
 
-Please report security issues **privately**, not in public.
+Please report security issues **privately** — not in a public issue.
 
-This repository has issues and pull requests disabled, so report a suspected
-vulnerability by **direct message to the maintainer on the community Discord**
-(testers receive a direct invite; there is no public invite link). Include what you
-found, how to reproduce it, and the release tag affected. Please do not attach raw
-`Game.log` files — share only the specific lines needed, in a DM.
+Use GitHub's **[private vulnerability reporting](../../security/advisories/new)**
+(the repository's *Security* tab → *Report a vulnerability*). Testers on the
+community Discord can also send the maintainer a **direct message** instead (there
+is no public invite link). Include what you found, how to reproduce it, and the
+release tag affected. Please do not attach raw `Game.log` files — share only the
+specific lines needed.
 
 You'll get an acknowledgement as soon as the maintainer sees it. As a personal
 project maintained in spare time, response times are best-effort.

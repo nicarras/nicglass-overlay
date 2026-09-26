@@ -2,15 +2,17 @@
   Public-facing README. This file is the SOURCE for the public repo's README.md.
 
   MODEL (2026-09-19, binary-only): the public repo `nicglass-overlay` carries only
-  this README + GitHub Releases (prebuilt installers); issues are DISABLED and no
-  source is published. This file is version-controlled here in the private repo and
+  this README + GitHub Releases (prebuilt installers); no source is published.
+  Issues are ENABLED (owner, 2026-09-26) so players can report bugs publicly; the
+  owner folds them into the private repo's tracker as needed. This file is
+  version-controlled here in the private repo and
   carried to the public repo by the release automation (#538) — there is no
   publish/scrub source-mirror pipeline any more (Track B retired). The private repo's
   own dev readme is the repo-root README.md; edit that one for private/dev notes,
   this one for what the public sees.
 
-  Bug reports/security route to the community Discord by PERSONAL invite (owner
-  invites testers by hand) — no public invite link is published here by design.
+  Security reports go through GitHub private vulnerability reporting or a Discord DM
+  (testers are invited by hand) — no public invite link is published here by design.
 -->
 
 # NicGlass Overlay
@@ -86,10 +88,16 @@ uploaded.
 
 ## Bug reports and questions
 
-This repository has issues disabled. Bug reports, questions, and suspected security
-issues go through the community **Discord** — testers receive a direct invite. When
-reporting a bug, do **not** attach raw `Game.log` files publicly — they contain your
-handle and session detail; share only the specific lines you're asked for, in a DM.
+Found a bug or have an idea? **[Open an issue](../../issues/new/choose)** — there are
+forms for bug reports and feature requests. Testers on the community Discord can keep
+reporting there too.
+
+Please **don't attach raw `Game.log` files** to an issue. Issues are public, and the
+log carries your handle and session detail. Paste only the few lines around the
+problem, and blank out your handle if you'd rather keep it private.
+
+Suspected **security** issues should not go in a public issue — see
+[SECURITY.md](SECURITY.md).
 
 ## License & compliance
 
