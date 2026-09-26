@@ -13,7 +13,7 @@
   invites testers by hand) — no public invite link is published here by design.
 -->
 
-# SC Companion Overlay
+# NicGlass Overlay
 
 A transparent, always-on-top overlay for **Star Citizen** that reads the game's own
 `Game.log` and turns it into at-a-glance, MobiGlass-styled widgets — missions,
@@ -53,7 +53,7 @@ handle out of the log.
 
 ## Install and run
 
-1. Download the latest installer or portable build from the
+1. Download the latest installer (`NicGlass-Overlay-Setup-<version>.exe`) from the
    [Releases](../../releases) page.
 2. Run it. The builds are **unsigned**, so Windows SmartScreen may warn about an
    "unknown publisher" — choose *More info → Run anyway*.
@@ -93,7 +93,7 @@ handle and session detail; share only the specific lines you're asked for, in a 
 
 ## License & compliance
 
-**License: proprietary end-user license — see [LICENSE](LICENSE).** SC Companion
+**License: proprietary end-user license — see [LICENSE](LICENSE).** NicGlass
 Overlay is free to use for your personal use. Redistribution, resale, and reverse-
 engineering of the application are not permitted (with the standard carve-outs for the
 bundled open-source components below and for rights the law does not let a license

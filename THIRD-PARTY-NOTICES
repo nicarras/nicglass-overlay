@@ -1,8 +1,8 @@
-SC Companion Overlay — THIRD-PARTY NOTICES
+NicGlass Overlay — THIRD-PARTY NOTICES
 ===========================================
 
-This file lists the third-party components distributed with SC Companion Overlay
-and the notices their licenses require. SC Companion Overlay itself is licensed to
+This file lists the third-party components distributed with NicGlass Overlay
+and the notices their licenses require. NicGlass Overlay itself is licensed to
 end users under a proprietary EULA (see the LICENSE file); the components below keep
 their own licenses, and where a component's license grants you rights the EULA would
 otherwise restrict (for example, the right to modify or replace a bundled library),
@@ -60,12 +60,12 @@ against the shipped dependency tree on 2026-09-19 (see the "Verification" sectio
    version 3.
 
    libuiohook is used UNMODIFIED, compiled into the separately-loadable native
-   module uiohook-napi.node, which SC Companion Overlay loads at run time through
+   module uiohook-napi.node, which NicGlass Overlay loads at run time through
    the operating system's dynamic loader (a "suitable shared library mechanism"
    under LGPL-3.0 §4(d)(1)). The module is shipped as a standalone .node file
    outside the application archive; a technically capable user may replace it with
    their own interface-compatible build of uiohook-napi / libuiohook, and the
-   application will continue to operate with it. Nothing in the SC Companion
+   application will continue to operate with it. Nothing in the NicGlass
    Overlay EULA restricts that right for this component.
 
    Because libuiohook is used unmodified, the unmodified upstream source at the
