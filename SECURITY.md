@@ -33,5 +33,16 @@ its attack surface:
   cloud keys in the client; the one persistent secret (a UCI refresh token) is stored
   encrypted at rest, outside the state directory.
 
-Personal play data (journal, ledger, session history) stays on the local machine by
-design and is not uploaded.
+- Optional **diagnostic log sharing** (off by default in public releases) uploads log
+  files with the same short-lived credentials. A Lambda verifies the caller's UCI
+  token and hands back a presigned upload that can only write under that caller's
+  own folder; the client has no direct storage permission and cannot read anything
+  back. Machine details (PC name, network addresses, Windows user name, home folder)
+  and any screen text the overlay read but could not recognise are removed on the
+  client before upload. The bucket is private, encrypted at rest,
+  TLS-only, and deletes uploads after 90 days. What is sent is listed in the
+  README's *Diagnostic logs* section.
+
+Personal play documents (journal, ledger, session history) stay on the local machine
+by design and are not uploaded. Raw log files leave the machine only through
+diagnostic log sharing, above.
