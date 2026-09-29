@@ -68,6 +68,13 @@ handle out of the log.
 The window is transparent, always-on-top and click-through, so it sits over the game
 without stealing input.
 
+**Arranging widgets.** Press **Insert** to make the overlay clickable, and press it
+again to go back to click-through. While it's clickable, the overlay's second bar,
+the one with the widget-set and theme pickers, has an **unlock** button (or press
+**L**). Unlocked, you can drag and resize the widgets; press **lock** when you're done.
+**reset** on the same bar puts every widget back in its default position. The lock
+button is on that bar, not in Settings.
+
 ## How it works
 
 Star Citizen continuously writes a `Game.log`. The overlay follows that file, parses
