@@ -87,6 +87,11 @@ data — journal, ledger, session history — stays on your machine. Price sync 
 uploads it; the only way your logs leave the machine is the separate **Share
 diagnostic logs** setting below.
 
+**Known limitation:** sharing prices between players is new. Uploading and reading
+back your own prices is tested, but the full exchange between two real players'
+accounts has not been exercised yet; it is being verified during the beta. If a
+shared price looks wrong, please report it.
+
 ## Diagnostic logs (optional)
 
 With an account linked, the overlay can send your log files to the developer so bugs
@@ -115,6 +120,12 @@ separate setting in Settings → Connections, independent of price sharing.
   that only the developer can read. Uploads are deleted from it automatically **90
   days** after upload. The developer may keep a local copy of a session while
   working on the bug it shows, and deletes it when that bug is closed.
+- **Who sent it:** so that sessions from the same tester can be followed across
+  uploads, the developer keeps a short private list that pairs your account ID and
+  RSI handle with a label (`Tester A`, `Tester B`, …). It holds nothing from your
+  logs, and it is used only for testing. Discord upload notices show the label, never
+  your handle. The list does not expire on its own; ask the developer to remove your
+  entry at any time.
 - **Why:** to reproduce and fix bugs in the overlay. The logs are not shared,
   published or used for anything else.
 
